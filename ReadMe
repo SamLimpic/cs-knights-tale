@@ -1,0 +1,33 @@
+1. MySql DB Connection:
+
+        "DB": {
+            "gearhost": "server=den1.mysql4.gear.host;port=3306;database=samwiseknights;user idsamwiseknights;  password=Ep4Q?    VGCx63!"
+          }
+
+
+
+2. Follows the Pattern...
+
+          "DB": {
+        "gearhost": "server= { server name } ;port=3306;database= { database name } ;user id={ database name } ;    password= { password }"
+          }
+
+
+
+3. And is Copied into...
+
+        appsettings.Development.json & appsettings.json
+
+
+
+4. Which are added to .gitignore
+
+        appsettings.*
+            .vscode
+
+
+
+5. Add Packages through "Nuget"
+
+        *ctrl* 'p' => ">nuget" => "Add Package" => "CodeWorks.Auth0Provider", "microsoft.aspnetcore.authentication.jwtbearer", "MySqlConnector", & "Dapper"
+                Look up all downloaded packages in "___projectName.csproj"
