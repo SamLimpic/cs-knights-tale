@@ -75,7 +75,7 @@ CREATE TABLE knights(
 -- -- GET ALL
 -- SELECT * FROM lords
 -- SELECT * FROM kingdoms
-SELECT * FROM knights
+-- SELECT * FROM knights
 
 -- -- GET BY ID
 -- Select * FROM knights WHERE birthyear > 1960

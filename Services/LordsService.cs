@@ -38,10 +38,10 @@ namespace cs_knights_tale.Services
             return newLord;
         }
 
-        internal Lord Update(Lord update)
+        internal Lord Update(Lord edit)
         {
-            Lord original = GetById(update.Id);
-            original.Name = update.Name.Length > 0 ? update.Name : original.Name;
+            Lord original = GetById(edit.Id);
+            original.Name = edit.Name.Length > 0 ? edit.Name : original.Name;
             if (_repo.Update(original))
             {
                 return original;
